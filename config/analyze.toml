@@ -1,0 +1,7 @@
+path_result = "results/co_er_small/train/results_20260126_1414/parquet"
+problem = "mis"
+file_format = "parquet"
+nb_best_param_combi = 10
+mix_graph_type = false
+sig_fig = 5
+supervised = true

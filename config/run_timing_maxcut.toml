@@ -1,0 +1,18 @@
+results_path = ""  # unused when combis_path is set
+problem_name = "maxcut"
+aggregation_method = "graph_agg"
+nb_reps_per_graph = 3
+supervised = false
+track_metrics = false
+combis_path = "/home/benitoin/polerina/results/best_params/maxcut/graph_agg_20260408_2221/selected_combis.txt"
+
+[data]
+dataset_name = ["co_er_small", "co_er_large", "co_ba_small", "co_ba_large", "co_rb_small", "co_rb_large"]
+dataset_split = "test"
+sample = 0.001334  # 10/7500 graphs (int-truncation safe)
+
+[output]
+output_path = "results/timing"
+visualize = false
+visualize_reps = 0
+plot_display = "not_displayed"

@@ -1,0 +1,31 @@
+synthetic_data = false
+problem_name = "mis"
+nb_reps_per_graph = 1
+
+[data]
+dataset_name = ["co_er_small", "co_er_large", "co_ba_small", "co_ba_large", "co_rb_small", "co_rb_large"]
+dataset_split = "train"
+sample = 0.002  # 3/35000 0.00008571428
+
+
+# [graph]
+# dataset_size = 2
+# num_nodes = 100
+# p = 0.04
+
+
+[ga]
+pop_size = [10, 50, 250] #[50, 250]
+nb_offsprings = [10, 50, 250] # [50, 250]
+init_type = ["random"] # ["independent", "random", "prob"]
+evolution_mode = ["darwin", "baldwin", "lamarck", "lb"] # add "lb" for L-B hybrid
+crossover_rate = [0.0, 0.5, 0.9, 1.0] #0.3,0.7 [1.0]
+lamarckian_probability = [0.15, 0.3, 0.5, 0.9]   # only used when evolution_mode includes "lb"
+mutation_type = ["bernoulli"] # ["bernoulli", "fast_mutation"]
+
+
+
+[output]
+visualize = false
+visualize_reps = 1
+plot_display = "not_displayed"

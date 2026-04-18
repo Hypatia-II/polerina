@@ -1,0 +1,28 @@
+synthetic_data = false
+problem_name = "mis"
+
+[data]
+dataset_name = ["co_er_small"] #, "co_er_large", "co_ba_small", "co_ba_large", "co_rb_small"]
+dataset_split = "train"
+sample = 0.00008571428 #3/35000
+
+
+[graph]
+dataset_size = 2
+num_nodes = 100
+p = 0.04
+
+
+[ga]
+pop_size = 100
+nb_offsprings = 75
+init_type = "prob" # ["independent", "random", "prob"]
+evolution_mode = "baldwin" # "darwin" | "baldwin" | "lamarck" | "lb"
+crossover_rate = 0.9
+# lamarckian_probability = 0.1   # only needed when evolution_mode = "lb"
+mutation_type = "bernoulli" # ["bernoulli", "fast_mutation"]
+
+[output]
+visualize = true
+visualize_reps = 1
+plot_display = "not_displayed"

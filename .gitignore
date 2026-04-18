@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+.myPython310_GPU/
+
+# Data and logs
+data/
+results/
+*.log
+best_params.zip
+
+# Claude Code
+CLAUDE.md
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bbl
+*.blg
+*-eps-converted-to.pdf
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Gemini CLI configuration
+GEMINI.md

@@ -1,0 +1,15 @@
+results_path = "/home/benitoin/polerina/results/maxcut/co_er_small__co_er_large__co_ba_small__co_ba_large__co_rb_small__co_rb_large/train/results_20260403_1111"
+problem_name = "maxcut"
+aggregation_method = "graph_agg"  # "graph_agg" or "normalized_agg"
+nb_reps_per_graph = 3
+supervised = false
+
+[data]
+dataset_name = ["co_er_small", "co_er_large", "co_ba_small", "co_ba_large", "co_rb_small", "co_rb_large"]
+dataset_split = "test"
+
+[output]
+output_path = "results"
+visualize = false
+visualize_reps = 1
+plot_display = "not_displayed"

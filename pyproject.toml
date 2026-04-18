@@ -1,0 +1,39 @@
+[project]
+name = "polerina"
+version = "0.1.0"
+description = "P.O.L.E.R.I.N.A. — Problem Optimization via Learning & Evolutionary Research for Intelligent Network Analysis"
+requires-python = ">=3.10"
+dependencies = [
+    "graphbench-lib",
+    "joblib",
+    "matplotlib",
+    "msgspec>=0.18",
+    "networkx",
+    "numba",
+    "numpy",
+    "pandas",
+    "polars",
+    "pyarrow",
+    "scipy",
+    "scikit-learn",
+    "tomli>=2.0; python_version < '3.11'",
+    "tqdm",
+    "typer>=0.9",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "ipython",
+    "jupyter",
+    "marimo",
+]
+
+[project.scripts]
+polerina = "polerina.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/polerina"]

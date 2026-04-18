@@ -1,0 +1,3 @@
+dataset_name = "co_er_small"
+delete_raw = true
+splits = ["test"]
